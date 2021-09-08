@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Msaleh</string>
+
+
+    <string name="login">https://msalehgroup.co.in/msalah/api/user/</string>
+    <string name="registerEquipment">https://msalehgroup.co.in/msalah/api/user/registerEquipment/</string>
+    <string name="enrollStaff">https://msalehgroup.co.in/msalah/api/user/enrollStaff/</string>
+    <string name="getEquipment">https://msalehgroup.co.in/msalah/api/user/getEquipmentAdmin/</string>
+    <string name="getStaff">https://msalehgroup.co.in/msalah/api/user/getStaff/</string>
+    <string name="getDelivery">https://msalehgroup.co.in/msalah/api/user/getDelivery/</string>
+    <string name="getStaffImage">https://msalehgroup.co.in/msalah/api/</string>
+    <string name="mobilesync">https://msalehgroup.co.in/msalah/api/user/syn/</string>
+    <string name="senddelivery">https://msalehgroup.co.in/msalah/api/user/senddelivery/</string>
+    <string name="sendreceiverVcode">https://msalehgroup.co.in/msalah/api/user/sendreceiverVcode/</string>
+    <string name="verifyCodeR">https://msalehgroup.co.in/msalah/api/user/verifyCodeR/</string>
+    <string name="markunsuccessful">https://msalehgroup.co.in/msalah/api/user/markunsuccessful/</string>
+
+    <string name="requestvcodeall">https://msalehgroup.co.in/msalah/api/user/requestvcodeall/</string>
+    <string name="verifyvcodeall">https://msalehgroup.co.in/msalah/api/user/verifyvcodeall/</string>
+    <string name="getImagesAdmins">https://msalehgroup.co.in/msalah/api/user/getImagesAdmins/</string>
+
+    <string name="getvcode">https://msalehgroup.co.in/msalah/api/user/getvcode/</string>
+    <string name="resetpass">https://msalehgroup.co.in/msalah/api/user/resetpass/</string>
+
+
+    <string name="title">指纹算法检查程序 1.2</string>
+    <string name="version">ver. 1.2.0.5  </string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="fp_image">ImageView</string>
+    <string name="prgval">0%</string>
+    <string name="user">Enrolled users list</string>
+
+    <string name="learning">  Learning</string>
+    <string name="inputimage">Entered Image</string>
+    <string name="sucessimage">Success Image</string>
+
+    <string name="runtime">CurTime(ms)</string>
+    <string name="avertime">AverTime(ms)</string>
+    <string name="immobile">Result</string>
+    <string name="fingernum">Finger N</string>
+
+    <string name="leftcapture">CaptureLeft</string>
+    <string name="rightcapture">CaptureRight</string>
+    <string name="getlefttmpl">GetTmpl左</string>
+    <string name="getrighttmpl">GetTmpl右</string>
+    <string name="verifyiso">VerifyISO</string>
+    <string name="verifyansi">VerifyANSI</string>
+
+    <string name="capture">Capture</string>
+    <string name="enroll">Enroll</string>
+    <string name="match">Identify</string>
+    <string name="delete">Del</string>
+    <string name="deleteall">DelAll</string>
+    <string name="emptyid">Get空ID</string>
+    <string name="readtemp">RdTmpl</string>
+    <string name="writetemp">WrTmpl</string>
+    <string name="towsq">To WSQ</string>
+    <string name="fromwsq">From WSQ</string>
+    <string name="getiso2005">GetISO2005</string>
+    <string name="getiso2011">GetISO2011</string>
+    <string name="getansitmpl">GetANSI</string>
+    <string name="setsecure">SetSecure</string>
+    <string name="getsecure">GetSecure</string>
+    <string name="getdup">GetDup</string>
+    <string name="setdup">SetDup</string>
+    <string name="ffstore">FFStore</string>
+    <string name="ffread">FFRead</string>
+    <string name="ffgenerate">FFGenerate</string>
+    <string name="ffupdate">FFUpdate</string>
+    <string name="verifyga">VerifyGA</string>
+    <string name="startid">Start ID(0,1,2,&#8230;)</string>
+    <string name="count">Count(1,2,&#8230;)</string>
+    <string name="selectall">Select All</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_fileexplorer">File Explorer</string>
+    <string name="choose_file">Choose File</string>
+    <string name="file_name">File Name</string>
+    <string name="action_interface_test_screen">Interface</string>
+    <string name="action_demo_main_screen">DemoTest</string>
+
+    <string name="ramaddrid">RamAddrId(0,1,2)</string>
+    <string name="gencount">GenCount(2,3)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

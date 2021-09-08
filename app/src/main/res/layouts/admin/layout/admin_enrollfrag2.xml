@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_staff_id"
+        android:layout_marginLeft="16dp"
+        android:textFontWeight="2"
+        android:text="Staff Id : "
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="16dp"
+        android:weightSum="9"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/calibri"
+            android:textColorHint="@android:color/black">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/sp_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit"
+                android:fontFamily="@font/calibri"
+                android:hint="Title"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="7"
+            android:fontFamily="@font/calibri"
+            android:textColorHint="@android:color/black">
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit"
+                android:fontFamily="@font/calibri"
+                android:hint="Name (Surname first)"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-16dp"
+        android:fontFamily="@font/calibri"
+        android:textColorHint="@android:color/black">
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit"
+            android:fontFamily="@font/calibri"
+            android:hint="Address"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/calibri"
+        android:textColorHint="@android:color/black">
+
+        <EditText
+            android:id="@+id/edt_phone1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit"
+            android:fontFamily="@font/calibri"
+            android:hint="Phone Number 1"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/calibri"
+        android:textColorHint="@android:color/black">
+
+        <EditText
+            android:id="@+id/edt_phone2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Phone Number 2"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/calibri"
+        android:textColorHint="@android:color/black">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Email"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/calibri"
+        android:textColorHint="@android:color/black">
+
+        <AutoCompleteTextView
+            android:id="@+id/txt_staff_bday"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Birthday"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_date_range_light_blue_24dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"  />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/sp_stateOfOrigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:fontFamily="@font/calibri"
+        android:hint="State Of Origin"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        app:met_textColor="#000000"
+        android:textColorHint="#434343"
+        android:textStyle="bold"
+        app:met_baseColor="#FFFFFF"
+        app:met_primaryColor="#353434"
+        app:met_textColorHint="#333333"
+        app:met_floatingLabel="none"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/sp_lga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/calibri"
+        android:hint="LGA"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/rounded_edit"
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textColorHint="#000000"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/sp_maritalStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:fontFamily="@font/calibri"
+        android:hint="Marital Status"
+        android:visibility="visible"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        app:met_textColor="#000000"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        app:met_baseColor="#FFFFFF"
+        app:met_primaryColor="#000000"
+        app:met_textColorHint="#333333"
+        app:met_floatingLabel="none"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_margin="16dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshapeblack"
+            android:text="back"
+            android:id="@+id/btn_prev_frag"
+            android:fontFamily="@font/calibri"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonshapeblack"
+            android:text="next"
+            android:id="@+id/btn_nxt_frag"
+            android:fontFamily="@font/calibri"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

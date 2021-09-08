@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_staff_id"
+        android:layout_marginLeft="16dp"
+        android:textFontWeight="2"
+        android:text="Staff Id : "
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_show"
+        android:layout_marginRight="16dp"
+        android:textFontWeight="2"
+        android:text="biometrics "
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_marginTop="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:padding="6dp"
+                    android:orientation="vertical"
+
+                    >
+
+
+
+
+                    <ImageView
+                        android:id="@+id/buttonPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_weight="2.75"
+                        android:text="Picture/Passport"
+                        android:src="@drawable/photography"
+                        android:layout_margin="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Picture/Passport"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:padding="6dp"
+                    android:orientation="vertical"
+
+                    >
+
+
+
+
+                    <ImageView
+                        android:id="@+id/buttonIdcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_weight="2.75"
+                        android:text="Id Card"
+                        android:src="@drawable/id_card"
+                        android:layout_margin="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Id Card"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:padding="6dp"
+                    android:orientation="vertical"
+
+                    >
+
+
+
+
+                    <ImageView
+                        android:id="@+id/buttonfingerprint"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_weight="2.75"
+                        android:text="scan fingerprint"
+                        android:src="@drawable/fingerprint"
+                        android:layout_margin="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="scan fingerprint"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:padding="6dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:id="@+id/signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_weight="2.75"
+                        android:text="Signature"
+                        android:src="@drawable/art"
+                        android:layout_marginTop="0dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="upload signature"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:drawableRight="@drawable/signature"
+                        android:textColor="#000000"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_margin="16dp">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttonshapeblack"
+                    android:text="finish"
+                    android:id="@+id/btn_finish_frag1"
+                    android:fontFamily="@font/calibri"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enroll_nav"
+    app:startDestination="@id/adminEnroll1">
+
+    <fragment
+        android:id="@+id/adminEnroll1"
+        tools:layout="@layout/admin_enrollfrag"
+        android:name="com.example.msalehstoreapp.ui.admin.fragments.AdminEnroll1"
+        android:label="AdminEnroll1" >
+        <action
+            android:id="@+id/action_adminEnroll1_to_adminEnroll2"
+            app:destination="@id/adminEnroll2" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminEnroll2"
+        tools:layout="@layout/admin_enrollfrag2"
+        android:name="com.itcrusaders.msaleh.fragments.AdminEnroll2"
+        android:label="AdminEnroll2" >
+        <action
+            android:id="@+id/action_adminEnroll2_to_adminEnroll3"
+            app:destination="@id/adminEnroll3" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminEnroll3"
+        tools:layout="@layout/admin_enrollfrag3"
+        android:name="com.itcrusaders.msaleh.fragments.AdminEnroll3"
+        android:label="AdminEnroll3" >
+        <action
+            android:id="@+id/action_adminEnroll3_to_adminEnroll4"
+            app:destination="@id/adminEnroll4" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminEnroll4"
+        tools:layout="@layout/admin_enrollfrag4"
+        android:name="com.itcrusaders.msaleh.fragments.AdminEnroll4"
+        android:label="AdminEnroll4" />
+</navigation>

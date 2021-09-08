@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="enr1viewModel"
+            type="com.example.msalehstoreapp.viewmodel.adminEnrollViewModels.AdminEnroll1ViewModel" />
+    </data>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_staff_id"
+        android:layout_marginLeft="16dp"
+        android:textFontWeight="2"
+        android:text="Staff Id : "
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"/>
+
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/sp_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:entries="@{enr1viewModel.branchList}"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:fontFamily="@font/railwaywebfont"
+        android:hint="Branch"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:textColor="#292929"
+        android:textColorHint="#434343"
+        android:textStyle="bold"
+        app:met_primaryColor="#353434"
+        app:met_textColorHint="#333333"
+        app:met_floatingLabel="none"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_branch_manager_name"
+        android:layout_marginLeft="16dp"
+        android:textFontWeight="2"
+        android:text="Branch Manager : "
+        android:textStyle="italic"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:fontFamily="@font/calibri"
+        android:textColorHint="@android:color/black">
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Password"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/sp_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:fontFamily="@font/railwaywebfont"
+        android:hint="Department"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:textColor="#292929"
+        android:textColorHint="#434343"
+        android:textStyle="bold"
+        app:met_baseColor="#504f4f"
+        app:met_primaryColor="#353434"
+        app:met_textColorHint="#333333"
+        app:met_floatingLabel="none"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/sp_job_descri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:fontFamily="@font/railwaywebfont"
+        android:hint="Job Description"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:textColor="#292929"
+        android:textColorHint="#434343"
+        android:textStyle="bold"
+        app:met_baseColor="#504f4f"
+        app:met_primaryColor="#353434"
+        app:met_textColorHint="#333333"
+        app:met_floatingLabel="none"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/sp_immediate_supervisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:fontFamily="@font/railwaywebfont"
+        android:hint="Immediate Supervisor"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:textColor="#292929"
+        android:textColorHint="#434343"
+        android:textStyle="bold"
+        app:met_baseColor="#504f4f"
+        app:met_primaryColor="#353434"
+        app:met_textColorHint="#333333"
+        app:met_floatingLabel="none"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_margin="16dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonshapeblack"
+            android:text="next"
+            android:id="@+id/btn_nxt_frag"
+            android:fontFamily="@font/calibri"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>

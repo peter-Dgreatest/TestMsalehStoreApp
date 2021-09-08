@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020202"
+    tools:context=".ui.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/splash"
+        tools:layout_editor_absoluteX="-37dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:visibility="gone"
+        android:background="@drawable/layer_x0020_1"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
+    <TextView
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:visibility="gone"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/alegreyablack"
+        android:text="tap anywhere to continue"
+        android:gravity=""
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:id="@+id/onekindtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="180sp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/onekindtext"
+        app:layout_constraintRight_toRightOf="@id/onekindtext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/onekindtext"
+        app:layout_constraintStart_toStartOf="@+id/onekindtext"
+        app:layout_constraintTop_toBottomOf="@id/onekindtext"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:background="#4E811C" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:background="#FAC135" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:background="#FEFEFF" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:background="#0288D1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
