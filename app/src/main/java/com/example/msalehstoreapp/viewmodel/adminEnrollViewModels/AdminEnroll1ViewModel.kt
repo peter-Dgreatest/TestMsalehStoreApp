@@ -46,7 +46,7 @@ class AdminEnroll1ViewModel(
         viewModelScope.launch {
 
             _branches.value = enrollRepository.getBranches()
-          //  enrollRepository=bra
+            //enrollRepository=job
             branchList.value?.forEach { println() }
         }
     }
